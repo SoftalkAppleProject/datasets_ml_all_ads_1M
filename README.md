@@ -1,2 +1,2 @@
-# datasets_ml_all_ads
+# datasets_ml_all_ads_1M
 'Seed' pg images &amp; label masks dataset of all ads based on MAGAZINEgts ground-truth format. Max_pixels 1M.
