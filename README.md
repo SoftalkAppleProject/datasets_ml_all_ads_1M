@@ -1,2 +1,10 @@
-# datasets_ml_all_ads_1M
-'Seed' pg images &amp; label masks dataset of all ads based on MAGAZINEgts ground-truth format. Max_pixels 1M.
+# datasets_ml_all_ads_1M - A MAGAZINEgts Ground-Truth Dataset for Softalk magazine (1980-84)
+This is the 'seed' dataset of page images and label masks of all ads in Softalk magazine based on the MAGAZINEgts ground-truth storage format. The Max_pixels setting is 1M pixels, and all page and label mask images are in PNG format.
+
+So far, there are nearly 4,200 elements in what will be a dataset of 7,157 ads appearing in Softalk magazine (1980-84). Please see our [#DATeCH2017](https://www.researchgate.net/publication/317240599_The_MAGAZINE_GTS_format_an_integrated_document_structure_and_content_depiction_model_supporting_eResearch_and_machine-learning_at_the_Internet_Archive) and [#DATeCH2019](https://www.researchgate.net/publication/332625805_MAGAZINEgts_and_dhSegment_Using_a_Metamodel_Subgraph_to_Generate_Synthetic_Data_of_Under-Sampled_Complex_Document_Structures_for_Machine-Learning) posters for additional information about the #MAGAZINEgts ground-truth format providing integrated complex document structure and content depiction models based on an ontological "stack" of #cidocCRM, FRBRoo, and PRESSoo standards. 
+
+The [XML-based MAGAZINEgts file (~12+ MB) for Softalk magazine is here](https://archive.org/download/softalkapple/softalkapple_publication.xml) as part of the [Softalk magazine collection at the Internet Archive](https://archive.org/details/softalkapple?sort=date). The growing set of page images and machine-learning label mask images are available on GitHub [here](https://github.com/SoftalkAppleProject/datasets_ml_all_ads_1M).
+
+This dataset is to be used for training machine learning models to recognize magazine advertisements. This dataset included both actual and predicted bounding-box dimensions for each ad in the magazine. Note, however, that this dataset is the simplest 'seed' which can be used to generate any number of alternative and more detailed datasets based on mapping these ads to various parameter-patterns of the PRESSoo Issuing Rules for the Advertising Model of Softalk magazine found in the Metamodel partition of the MAGAZINEgts file describing the Softalk magazine collection at the Internet Archive.
+
+More as it evolves...
