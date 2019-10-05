@@ -12,6 +12,6 @@ Note that this dataset is the simplest 'seed' dataset which will initially be of
 
 For example, this 'seed' dataset can be used to generate an #ML model-training dataset that lets the model understand the interrelationships between an advertisement's size and shape in terms of the allowable positions on a page for that ad. Using these page images and the 1M max_pixel all_ads dataset elements in the Metadata partition of the Softalk magazine MAGAZINEgts file, a new set of appropriately-colored label masks can be generated using the ad_spec bounding-box location provided by the ground-truth 'actual' measures provided by this 'seed' dataset. 
 
-We intend to integrate Stanford DAWN's Snorkel framework to the *FactMiners Toolkit* to handle the _labeling_, _transformation_, and _slicing_ functions that such model-training dataset generation requires.
+We intend to integrate Stanford DAWN's [Snorkel framework](https://www.snorkel.org/) to the *FactMiners Toolkit* to handle the _labeling_, _transformation_, and _slicing_ functions that such model-training dataset generation requires.
 
 More as it evolves...
