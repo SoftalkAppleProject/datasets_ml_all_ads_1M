@@ -22,6 +22,8 @@ We intend to integrate Stanford DAWN's [Snorkel framework](https://www.snorkel.o
 
 ![Screenshot of Excel PivotTable showing distribution of ads in Softalk](/readme_etc/datech2019_admodel_excel_pivot_table.png)
 
+> NOTE: This PivotTable shows an early total of 7,164 total ads in the Ground-Truth branch of the #MAGAZINEgts DocumentStructure partition. This early total included 'dirty' entries including ads on missing pages from the scan repository and other data issues not included in the #MachineLearning model-training dataset. This early overall examination of the distribution of Softalk ads, however, is still very reflective of the distribution in this #ML model training dataset.   
+
 ## Non-case Computational Complement Subsets for Document Structure Model Training
 
 This 'seed' dataset of all advertisements in Softalk magazine now includes the dataset of 2,288 non-case examples of all pages WITHOUT an advertisement on them. These page and their (blank) associated label images are found in a sibling subdirectory, **noncase**, which contains the respective **images** and **label** directories. Model trainers may pull matched pairs of these non-case entries into their training, evaluation, and test subsets to create balanced distributions of case and non-case training elements.
