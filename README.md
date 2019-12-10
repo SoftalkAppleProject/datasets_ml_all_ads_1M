@@ -10,13 +10,17 @@ Please see our [#DATeCH2017](https://www.researchgate.net/publication/317240599_
 
 The [XML-based MAGAZINEgts file (~13+ MB) for Softalk magazine is here](https://archive.org/download/softalkapple/softalkapple_publication.xml) as part of the [Softalk magazine collection at the Internet Archive](https://archive.org/details/softalkapple?sort=date). The growing set of page images and machine-learning label mask images for use with the MAGAZINEgts metamodel and metadata are available [here on GitHub](https://github.com/SoftalkAppleProject/datasets_ml_all_ads_1M).
 
+![Small view of DATeCH2019 poster](/readme_etc/salmons_babitsky_datech2019_poster_small.png)
+
 This dataset is to be used for training machine learning models to recognize magazine advertisements. This dataset includes both actual and predicted bounding-box dimensions for each ad in the magazine. The predicted bounding-box is based on the PRESSoo Issuing Rules of the Softalk Advertising Model contained in the Metamodel partition of the MAGAZINEgts file.
 
 Note that this dataset is the simplest 'seed' dataset which will initially be of limited value for model training. We need, for example, to generate a complementary set of Softalk pages with no ads on the page to be incorporated into the training, validation, and test training data subsets. This 'seed' dataset, however, can be used to generate any number of alternative and more detailed training datasets based on mapping these ads to various parameter-patterns of the PRESSoo Issuing Rules for the Advertising Model of Softalk magazine found in the Metamodel partition of the MAGAZINEgts file describing the Softalk magazine collection at the Internet Archive. 
 
 For example, this 'seed' dataset can be used to generate an #ML model-training dataset that lets the model understand the interrelationships between an advertisement's size and shape in terms of the allowable positions on a page for that ad. Using these page images and the 1M max_pixel all_ads dataset elements in the Metadata partition of the Softalk magazine MAGAZINEgts file, a new set of appropriately-colored label masks can be generated using the ad_spec bounding-box location provided by the ground-truth 'actual' measures provided by this 'seed' dataset. 
 
-We intend to integrate Stanford DAWN's [Snorkel framework](https://www.snorkel.org/) to the *FactMiners Toolkit* to handle the _labeling_, _transformation_, and _slicing_ functions that such model-training dataset generation requires. 
+We intend to integrate Stanford DAWN's [Snorkel framework](https://www.snorkel.org/) to the *FactMiners Toolkit* to handle the _labeling_, _transformation_, and _slicing_ functions that such model-training dataset generation requires. In the meantime, here is a screenshot of an Excel spreadsheet PivotTable of the distribution of advertisements in the 48 issues of Softalk magazine:
+
+![Screenshot of Excel PivotTable showing distribution of ads in Softalk](/readme_etc/datech2019_admodel_excel_pivot_table.png)
 
 ## Non-case Computational Complement Subsets for Document Structure Model Training
 
