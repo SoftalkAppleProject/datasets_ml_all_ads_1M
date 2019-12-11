@@ -2,9 +2,9 @@
 ## A MAGAZINEgts Ground-Truth Dataset for Softalk magazine (1980-84)
 This is the 'seed' dataset of source page and label mask images of all ads in Softalk magazine based on the MAGAZINEgts ground-truth storage format. The Max_pixels setting is 1M pixels, and all page and label mask images are in PNG format.
 
-There are currently 7,109 elements in what will be a eventually be a dataset of 7,157 ads appearing in Softalk magazine (1980-84). The dataset will be complete once a small number of data inconsistencies are resolved. 
+There are currently 7,109 elements in what will eventually be a dataset of 7,157 ads appearing in Softalk magazine (1980-84). The dataset will be complete once this small number of data inconsistencies are resolved. Even without these resolutions, this #ML model training dataset is ready for researcher use.
 
-> Update: Please see section below about the addition of 'Non-case Computational Complement Subsets for Document Structure Model Training'
+> Update: Please see section below about support by the #MAGAZINEgts format to support generation of 'Non-case Computational Complement Subsets for Document Structure Model Training'
 
 Please see our [#DATeCH2017](https://www.researchgate.net/publication/317240599_The_MAGAZINE_GTS_format_an_integrated_document_structure_and_content_depiction_model_supporting_eResearch_and_machine-learning_at_the_Internet_Archive) and [#DATeCH2019](https://www.researchgate.net/publication/332625805_MAGAZINEgts_and_dhSegment_Using_a_Metamodel_Subgraph_to_Generate_Synthetic_Data_of_Under-Sampled_Complex_Document_Structures_for_Machine-Learning) posters for additional information about the #MAGAZINEgts ground-truth format providing integrated complex document structure and content depiction models based on an ontological "stack" of #cidocCRM, FRBRoo, and PRESSoo standards. 
 
